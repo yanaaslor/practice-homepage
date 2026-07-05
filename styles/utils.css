@@ -20,8 +20,12 @@
 /* Typography */
 
 .heyyou-voice {
-  font-weight: 700;
-  font-size: clamp(1.1rem, 7vw, 2.5rem);
+  font-weight: 900;
+  font-size: clamp(
+    var(--size-3xl),
+    calc(var(--size-xl) + 2.8vw),
+    var(--size-6xl)
+  );
   line-height: 1;
 }
 
@@ -63,10 +67,9 @@
 }
 
 .reading-voice {
-  font-family: "Source Code Pro", monospace;
-  font-size: clamp(0.75rem, 3vw, 1rem);
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: var(--font-secondary);
+  font-size: clamp(var(--size-sm), calc(var(--size-xxs) + 1.6vw), 1rem);
+  color: var(--clr-muted);
 }
 
 .caption-voice {
@@ -77,15 +80,15 @@
 }
 
 .page-section {
-  border: 2px dashed red;
   padding: 5rem 0;
+  /* border: 4px dashed red; */
 }
 
 .container {
   /* border: 3px solid blue; */
   width: 100%;
   margin-inline: auto;
-  padding: 1rem;
+  padding: 1.875rem;
 }
 
 .btn {
@@ -134,10 +137,6 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-
-  .page-section {
-    margin-top: 10rem;
   }
 }
 
