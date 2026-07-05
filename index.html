@@ -21,8 +21,8 @@
       rel="stylesheet"
       href="https://cdn.lineicons.com/5.1/line/lineicons.css"
     />
-
     <title>Final Project</title>
+    <script src="./src/main.js" type="module"></script>
   </head>
   <body>
     <!-- Header -->
@@ -95,7 +95,7 @@
           </a>
         </nav>
 
-        <button class="header__bars" aria-label="menu button">
+        <button id="bars-btn" class="header__bars" aria-label="menu button">
           <svg
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
@@ -115,8 +115,8 @@
     </header>
 
     <!-- Mobile Nav -->
-    <div class="mobile-nav">
-      <button class="mobile-nav__close-btn">Close</button>
+    <div id="mobile-nav" class="mobile-nav">
+      <button id="close-btn" class="mobile-nav__close-btn">Close</button>
       <img
         src="./public/logo.png"
         alt="a girl holding a cup of coffee"
