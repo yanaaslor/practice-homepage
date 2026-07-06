@@ -30,9 +30,8 @@
 }
 
 .attention-voice {
-  font-size: clamp(1.1rem, 8vw, 1.5rem);
+  font-size: clamp(1.125rem, 1.5vw, 1.5rem);
   line-height: 1.2;
-  letter-spacing: -0.05em;
   font-weight: 700;
 }
 
@@ -72,23 +71,36 @@
   color: var(--clr-muted);
 }
 
+.subtext-voice {
+  font-family: var(--font-secondary);
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: var(--clr-light);
+}
+
 .caption-voice {
-  font-family: "Source Code Pro", monospace;
-  font-size: clamp(0.75rem, 3vw, 1rem);
-  font-weight: 300;
-  color: #888;
+  font-family: var(--font-secondary);
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: var(--clr-text);
 }
 
 .page-section {
-  padding: 5rem 0;
+  padding: 10vh 0;
   /* border: 4px dashed red; */
+}
+
+.section-title {
+  font-family: var(--font-secondary);
+  font-size: clamp(0.75rem, 3vw, 1rem);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--clr-text);
 }
 
 .container {
   /* border: 3px solid blue; */
   width: 100%;
   margin-inline: auto;
-  padding: 1.875rem;
+  padding-inline: 10vh;
 }
 
 .btn {
