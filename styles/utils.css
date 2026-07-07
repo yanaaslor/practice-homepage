@@ -31,7 +31,7 @@
 }
 
 .attention-voice {
-  font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+  font-size: clamp(var(--size-sm), calc(var(--size-xxs) + 1.6vw), 1rem);
   line-height: 1;
   font-weight: 700;
 }
