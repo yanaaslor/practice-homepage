@@ -52,6 +52,7 @@
   );
   font-weight: 700;
   text-transform: capitalize;
+  line-height: 1;
 }
 
 .option-voice {
@@ -80,21 +81,21 @@
 
 .subtext-voice {
   font-family: var(--font-secondary);
-  font-size: clamp(0.75rem, 1vw, 1rem);
+  font-size: clamp(0.75rem, calc(var(--size-xxs) + 0.8vw), 1rem);
   color: var(--clr-light);
 }
 
 /* Different color of subtext-voice to avoid inline styles in html */
 .subtext2-voice {
   font-family: var(--font-secondary);
-  font-size: clamp(0.75rem, 1vw, 1rem);
+  font-size: clamp(0.75rem, calc(var(--size-xxs) + 0.8vw), 1rem);
   color: var(--clr-text);
 }
 
 .caption-voice {
   font-family: var(--font-secondary);
   font-size: clamp(0.75rem, calc(var(--size-xxs) + 0.8vw), 1rem);
-  color: var(--clr-text);
+  color: var(--clr-muted);
 }
 
 .page-section {
