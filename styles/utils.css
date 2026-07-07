@@ -24,9 +24,10 @@
   font-size: clamp(
     var(--size-3xl),
     calc(var(--size-xl) + 2.8vw),
-    var(--size-6xl)
+    var(--size-5xl)
   );
   line-height: 1;
+  color: var(--clr-light);
 }
 
 .attention-voice {
@@ -43,15 +44,14 @@
 }
 
 .strong-voice {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: clamp(
     var(--size-xl),
-    calc(var(--size-base) + 0.55vw),
+    calc(var(--size-base) + 2vw),
     var(--size-2xl)
   );
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: capitalize;
 }
 
 .option-voice {
@@ -71,15 +71,29 @@
   color: var(--clr-muted);
 }
 
+/* Different color of reading-voice to avoid inline styles in html markup */
+.additional-reading-voice {
+  font-family: var(--font-primary);
+  font-size: clamp(var(--size-sm), calc(var(--size-xxs) + 1.6vw), 1rem);
+  color: var(--clr-text);
+}
+
 .subtext-voice {
   font-family: var(--font-secondary);
   font-size: clamp(0.75rem, 1vw, 1rem);
   color: var(--clr-light);
 }
 
-.caption-voice {
+/* Different color of subtext-voice to avoid inline styles in html */
+.subtext2-voice {
   font-family: var(--font-secondary);
   font-size: clamp(0.75rem, 1vw, 1rem);
+  color: var(--clr-text);
+}
+
+.caption-voice {
+  font-family: var(--font-secondary);
+  font-size: clamp(0.75rem, calc(var(--size-xxs) + 0.8vw), 1rem);
   color: var(--clr-text);
 }
 
