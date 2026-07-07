@@ -22,7 +22,7 @@
 .heyyou-voice {
   font-weight: 900;
   font-size: clamp(
-    var(--size-3xl),
+    var(--size-2xl),
     calc(var(--size-xl) + 2.8vw),
     var(--size-5xl)
   );

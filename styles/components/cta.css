@@ -1,0 +1,53 @@
+.cta .container {
+  text-align: center;
+}
+
+.cta .container > * + * {
+  margin-top: 1rem;
+}
+.cta__image {
+  width: var(--size-9xl);
+  height: var(--size-9xl);
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.cta__arrow {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+  width: 1em;
+}
+
+.cta__description {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+/* Media queries */
+/* xs */
+@media (min-width: 475px) {
+  .cta__image {
+    width: var(--size-10xl);
+    height: var(--size-10xl);
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+  .cta .container > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
