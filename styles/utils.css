@@ -36,13 +36,6 @@
   font-weight: 700;
 }
 
-.shout-voice {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1.4;
-}
-
 .strong-voice {
   font-family: var(--font-primary);
   font-size: clamp(
@@ -100,7 +93,6 @@
 
 .page-section {
   padding: 10vh 0;
-  /* border: 4px dashed red; */
 }
 
 .section-title {
@@ -112,7 +104,6 @@
 }
 
 .container {
-  /* border: 3px solid blue; */
   width: 100%;
   margin-inline: auto;
   padding-inline: 5vh;
